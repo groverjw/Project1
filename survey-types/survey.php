@@ -23,7 +23,7 @@ $user_id = $current_user->ID;
 $key = 'thoughts_counter'; 
 $lives = get_user_meta($user_id, $key);
 $hasLives = $lives[0];
-if ( is_user_logged_in() && isset($hasLives)) {
+if ( is_user_logged_in()){// && isset($hasLives)) {
 ?>
 
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
