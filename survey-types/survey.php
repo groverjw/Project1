@@ -20,7 +20,7 @@ Template Name: Survey
 get_header(); ?>
 <?php
 $user_id = $current_user->ID;
-$key = 'thoughts_counter'; 
+$key = 'thoughts_counter';
 $lives = get_user_meta($user_id, $key);
 $hasLives = $lives[0];
 if ( is_user_logged_in()){// && isset($hasLives)) {
@@ -42,58 +42,58 @@ require_once('survey-types/process.php');
 
  if (isset($_GET["quiz"])){
 
-	if($_GET["quiz"] === "thoughts"){
-		$user_id = $current_user->ID; 
-		$key = 'thoughts_counter';
+	if($_GET["quiz"] === "idea1"){
+		$user_id = $current_user->ID;
+		$key = 'idea1_counter';
 		$livesLeft = get_user_meta($user_id, $key);
 		$lives = $livesLeft[0];
 		if($lives < 2){
-		$type ="thoughts";
+		$type ="idea1";
 		} else {
-		$type="resultsTho";
+		$type="resultsIdea1";
 		}
-		
-		
-	
-		}elseif($_GET["quiz"] === "emotions"){
-			
-			$user_id = $current_user->ID; 
-		$key = 'emotions_counter';
+
+
+
+  }elseif($_GET["quiz"] === "idea2"){
+
+			$user_id = $current_user->ID;
+		$key = 'idea2_counter';
 		$livesLeft = get_user_meta($user_id, $key);
 		$lives = $livesLeft[0];
 		if($lives < 2){
-		$type ="emotions";
+		$type ="idea2";
 		} else {
-		$type="resultsEmo";
+		$type="resultsIdea2";
 		}
-			
-			
-			
-			}elseif($_GET["quiz"] === "behavior"){
-				
-					$user_id = $current_user->ID; 
-		$key = 'behavior_counter';
+
+
+
+  }elseif($_GET["quiz"] === "idea3"){
+
+					$user_id = $current_user->ID;
+		$key = 'idea3_counter';
 		$livesLeft = get_user_meta($user_id, $key);
 		$lives = $livesLeft[0];
 		if($lives < 2){
-		$type ="behavior";
+		$type ="idea3";
 		} else {
-		$type="resultsBeh";
+		$type="resultsIdea3";
 		}
-				
+
 			}elseif($_GET["quiz"] === "results"){
 				$type="results";
 				}elseif($_GET["quiz"] === "reset"){
 				$type="reset";
 				}else{
-					
+
 					$type="error";
-					
+
 					}
-		
+
 	}else{
 		$type = "pick";
-		
+
 	}
 
 
@@ -122,8 +122,8 @@ global $post;
 <div class="container">
 
  </div>
- 
- 
+
+
 
 
 				<?php get_template_part( 'survey', $type ); ?>
@@ -132,13 +132,13 @@ global $post;
 	</div><!-- #primary -->
 
 <?php } else {
-	
+
 	echo 'You must be logged in and have access to this course to view this page';
-	
-	
+
+
 	?>
 	<hr />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <div class="container col-xs-12 col-md-6 col-md-offset-3">
     <style>
 #loginform > p.login-username > label{
@@ -155,11 +155,11 @@ jQuery(document).ready(function(){
     jQuery('#user_pass').attr('placeholder', 'User Password');
 });
 // ]]></script>
-    <?php 
-	
-	
+    <?php
+
+
 	$redirect_url = "//$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-	
+
 	$args = array(
 	'echo'           => true,
 	'remember'       => true,
@@ -172,15 +172,15 @@ jQuery(document).ready(function(){
 	'value_username' => '',
 	'value_remember' => false
 );
-	
+
 	wp_login_form($args); ?>
     </div>
 
 	<?php
-	
-	
-	
-	
+
+
+
+
 }?>
 
 <?php get_sidebar( 'footer' ); ?>

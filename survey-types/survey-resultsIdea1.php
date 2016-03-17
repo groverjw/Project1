@@ -6,12 +6,12 @@
 <?php
 require_once('survey-types/results.php');
 $current_user = wp_get_current_user();
-$user_id = $current_user->ID; 
+$user_id = $current_user->ID;
 $key = 'Quiz_Results';
 $user_tests = get_user_meta($user_id, $key);
 // filter out for Quiz type
 $my_test_results = my_filter_funk($user_tests,$type);
-// Check which quiz was take first. 
+// Check which quiz was take first.
 $t = my_time_comp_funk($my_test_results);
 // separate the arrays
 $v = $t['first'];
@@ -21,7 +21,7 @@ $total = my_total_funk($v);
 $total1 = my_total_funk($v1);
 
 //$vaz = my_number_percent_chang_funk($total1,$total2);
-	
+
 //	echo $vaz;
 $q1_1 = $v['Q1'];
 $q1_2 = $v1['Q1'] ;
@@ -51,21 +51,10 @@ $q7_1 = $v['Q7'];
 $q7_2 = $v1['Q7'] ;
 $q7_dif = my_number_percent_chang_funk($q7_1,$q7_2);
 
-$q8_1 = $v['Q8'];
-$q8_2 = $v1['Q8'] ;
-$q8_dif = my_number_percent_chang_funk($q8_1,$q8_2);
 
 
-$q9_1 = $v['Q9'];
-$q9_2 = $v1['Q9'] ;
-$q9_dif = my_number_percent_chang_funk($q9_1,$q9_2);
-
-$q10_1 = $v['Q10'];
-$q10_2 = $v1['Q10'] ;
-$q10_dif = my_number_percent_chang_funk($q10_1,$q10_2);
-
-$Sumtotal = $q1_1 + $q2_1 + $q3_1 + $q4_1 + $q5_1 + $q6_1 + $q7_1 + $q8_1 + $q9_1 + $q10_1;
-$Sumtotal1 = $q1_2 + $q2_2 + $q3_2 + $q4_2 + $q5_2 + $q6_2 + $q7_2 + $q8_2 + $q9_2 + $q10_2;
+$Sumtotal = $q1_1 + $q2_1 + $q3_1 + $q4_1 + $q5_1 + $q6_1 + $q7_1;
+$Sumtotal1 = $q1_2 + $q2_2 + $q3_2 + $q4_2 + $q5_2 + $q6_2 + $q7_2;
 
 $Sumtotal_dif = my_number_percent_chang_funk($Sumtotal,$Sumtotal1);
 
@@ -73,12 +62,12 @@ $Sumtotal_dif = my_number_percent_chang_funk($Sumtotal,$Sumtotal1);
 ?>
 <div class="container">
 
-<h2>Emotions Results</h2>
+<h2>Thought Results</h2>
 
-<p>1. When other people achieve something big, I resent their success.</p>
+<p>1. When reflecting on my day, I'm more likely to recall the bad things that happened, rather than good things.</p>
 
     <table class="table table-striped table-condensed">
-    
+
       <thead><tr>
         <th>First Answer</th>
         <th>Second Answer</th>
@@ -96,10 +85,10 @@ $Sumtotal_dif = my_number_percent_chang_funk($Sumtotal,$Sumtotal1);
 <hr />
 
 
-<p>2. I go to great lengths to avoid uncomfortable emotions, like anxiety or sadness.</p>
+<p>2. I keep my expectations low, because I don't want to be disappointed.</p>
 
     <table class="table table-striped table-condensed">
-    
+
       <thead><tr>
         <th>First Answer</th>
         <th>Second Answer</th>
@@ -118,10 +107,10 @@ $Sumtotal_dif = my_number_percent_chang_funk($Sumtotal,$Sumtotal1);
 
 
 
-<p>3. I feel really uncomfortable when someone is angry at me.</p>
+<p>3. When I think about making a change in my life, I spend more time thinking about possible worst-case scenarios rather than best-case scenarios.</p>
 
     <table class="table table-striped table-condensed">
-    
+
       <thead><tr>
         <th>First Answer</th>
         <th>Second Answer</th>
@@ -140,10 +129,10 @@ $Sumtotal_dif = my_number_percent_chang_funk($Sumtotal,$Sumtotal1);
 
 
 
-<p>4. I lose my temper and say (or do) things I later regret.</p>
+<p>4. I compare myself to other people in areas like wealth, appearance, or status.</p>
 
     <table class="table table-striped table-condensed">
-    
+
       <thead><tr>
         <th>First Answer</th>
         <th>Second Answer</th>
@@ -162,10 +151,10 @@ $Sumtotal_dif = my_number_percent_chang_funk($Sumtotal,$Sumtotal1);
 
 
 
-<p>5. My external circumstances determine what sort of mood I'm in.</p>
+<p>5. I have bad luck.</p>
 
     <table class="table table-striped table-condensed">
-    
+
       <thead><tr>
         <th>First Answer</th>
         <th>Second Answer</th>
@@ -183,10 +172,10 @@ $Sumtotal_dif = my_number_percent_chang_funk($Sumtotal,$Sumtotal1);
 <hr />
 
 
-<p>6. I spend a lot of time worrying about the future.</p>
+<p>6. I think I deserve better things in my life than what I have now.</p>
 
     <table class="table table-striped table-condensed">
-    
+
       <thead><tr>
         <th>First Answer</th>
         <th>Second Answer</th>
@@ -204,10 +193,10 @@ $Sumtotal_dif = my_number_percent_chang_funk($Sumtotal,$Sumtotal1);
 <hr />
 
 
-<p>7. I feel deeply offended by criticism or negative feedback, regardless of the source.</p>
+<p>7. I criticize myself.</p>
 
     <table class="table table-striped table-condensed">
-    
+
       <thead><tr>
         <th>First Answer</th>
         <th>Second Answer</th>
@@ -225,10 +214,10 @@ $Sumtotal_dif = my_number_percent_chang_funk($Sumtotal,$Sumtotal1);
 <hr />
 
 
-<p>8. Fear prevents me from taking steps toward my goals.</p>
+<p>8. I think I have little control over the things that happen to me.</p>
 
     <table class="table table-striped table-condensed">
-    
+
       <thead><tr>
         <th>First Answer</th>
         <th>Second Answer</th>
@@ -246,10 +235,10 @@ $Sumtotal_dif = my_number_percent_chang_funk($Sumtotal,$Sumtotal1);
 <hr />
 
 
-<p>9. My self-worth depends largely upon my achievements.</p>
+<p>9. When I have a presentation, performance, or activity coming up, I tend to predict a negative outcome.</p>
 
     <table class="table table-striped table-condensed">
-    
+
       <thead><tr>
         <th>First Answer</th>
         <th>Second Answer</th>
@@ -267,10 +256,10 @@ $Sumtotal_dif = my_number_percent_chang_funk($Sumtotal,$Sumtotal1);
 <hr />
 
 
-<p>10. I avoid taking risks - occupational, social, or financial - because I'm afraid.</p>
+<p>10. I have trouble accepting compliments from other people.</p>
 
     <table class="table table-striped table-condensed">
-    
+
       <thead><tr>
         <th>First Answer</th>
         <th>Second Answer</th>
@@ -288,7 +277,7 @@ $Sumtotal_dif = my_number_percent_chang_funk($Sumtotal,$Sumtotal1);
 <hr />
 
  <table class="table table-striped table-condensed">
-    
+
       <thead><tr>
         <th>Total First</th>
         <th>Total Second</th>
