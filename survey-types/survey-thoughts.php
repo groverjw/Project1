@@ -20,22 +20,20 @@
 
    <!-- Form Name -->
 
-   <legend>Idea 1</legend>
+   <legend></legend>
 
-   <br>
-   <p>1 = Strongly Disagree, 5 = Strong Agree</p>
 
-<p>Once you complete the assessment, click submit.</p>
 
-<br>
+Once you complete the assessment, click submit. Once you click submit you'll be able to see your score and what it means for you.</p> 
 
- <input name="form-type" type="" class="hidden" value="idea1">
+
+ <input name="form-type" type="" class="hidden" value="thoughts">
 
    <!-- Q1 -->
 
    <div class="form-group">
 
-     <label class="col-md-4 control-label" for="radios"> 1. The customers benefit is significant.</label>
+     <label class="col-md-4 control-label" for="radios"> 1. How significant is the customer benefit?<br><strong>1 = MINOR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5 = HUGE</strong></label>
 
      <div class="col-md-4">
 
@@ -75,7 +73,7 @@
 
          <input type="radio" name="radios-1" id="radios-4" value="5">
 
-         5
+         5 
 
        </label>
 
@@ -93,7 +91,7 @@
 
    <div class="form-group">
 
-     <label class="col-md-4 control-label" for="radios">  2. The idea is truly new.</label>
+     <label class="col-md-4 control-label" for="radios">  2. Is this idea truly new?<br><strong>1 = ME-TOO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5 = BREAKTHROUGH</strong></label>
 
      <div class="col-md-4">
 
@@ -145,7 +143,7 @@
 
    <div class="form-group">
 
-     <label class="col-md-4 control-label" for="radios"> 3. The potential market is big.</label>
+     <label class="col-md-4 control-label" for="radios"> 3. How bis is the potential market?<br><strong>1 = TINY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5 = ENORMOUS</strong></label>
 
      <div class="col-md-4">
 
@@ -195,7 +193,7 @@
 
      <div class="form-group">
 
-       <label class="col-md-4 control-label" for="radios">  4. The benefit can be delivered economically.</label>
+       <label class="col-md-4 control-label" for="radios">  4. Can the benefit be delivered economically?<br><strong>1 = NOPE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5 = ABSOLUTELY</strong></label>
 
        <div class="col-md-4">
 
@@ -245,7 +243,7 @@
 
        <div class="form-group">
 
-         <label class="col-md-4 control-label" for="radios">  5. Technical hurdles are minor.</label>
+         <label class="col-md-4 control-label" for="radios">  5. How significant are the technical hurdles?<br><strong>1 = MINOR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5 = DAUNTING</strong></label>
 
          <div class="col-md-4">
 
@@ -295,7 +293,7 @@
 
          <div class="form-group">
 
-           <label class="col-md-4 control-label" for="radios"> 6. This idea requires a new ecosystem.</label>
+           <label class="col-md-4 control-label" for="radios"> 6. Does this idea require a new ecosystem?<br><strong>1 = NO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5 = YES</strong></label>
 
            <div class="col-md-4">
 
@@ -345,7 +343,7 @@
 
            <div class="form-group">
 
-             <label class="col-md-4 control-label" for="radios"> 7. This idea fits with our skills/assets.</label>
+             <label class="col-md-4 control-label" for="radios"> 7. Does this idea fit with our skills/assets?<br><strong>1 = POOR FIT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5 = TIGHT FIT</strong></label>
 
              <div class="col-md-4">
 
@@ -391,7 +389,7 @@
 
              </div>
 
-           </div>
+           </div>  
 
 
    <!-- Button -->
@@ -462,9 +460,9 @@
 
 </div>
 
+       
 
-
-
+       
 
        <!--Closemodle-->
 

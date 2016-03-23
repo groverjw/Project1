@@ -11,6 +11,7 @@ $user_tests = get_user_meta($user_id, 'Quiz_Results');
 function my_filter_funk($user_tests, $type){
 	$first_taken = null;
 	$sec_taken = null;
+	$third_taken = null;
 	$data = array();	
 	foreach ($user_tests as $user_test) {
 		if($user_test['Survey_type'] != $type){
@@ -27,7 +28,14 @@ function my_filter_funk($user_tests, $type){
       $data['sec'] = $sec_taken;
       continue;
     }	
-	
+
+		if(!$third_taken){
+      $third_taken = $user_test;
+      $data['third'] = $third_taken;
+
+      continue;
+    }	
+    
 	}
 	return $data;
 	
@@ -36,33 +44,33 @@ function my_filter_funk($user_tests, $type){
 
 // Check which quiz was take first. 
 
-function my_time_comp_funk($twoTests){
-	$i = $twoTests['first']['Time'];
-	$e = $twoTests['sec']['Time'];
-	if($i < $e){
-		 return $twoTests;
-	}else{
+function my_comp_funk($twoTests){
+
 		$first_taken = null;
 		$sec_taken = null;
+		$third_taken = null;
 		$data = array();	
 		
 		foreach ($twoTests as $twoTest){
+			if(!$first_taken){
+			  $first_taken = $twoTest;
+			  $data['first'] = $first_taken;
+			  continue;
+			}	
 			if(!$sec_taken){
 			  $sec_taken = $twoTest;
 			  $data['sec'] = $sec_taken;
 			  continue;
-			}
-				if(!$first_taken){
-			  $first_taken = $twoTest;
-			  $data['first'] = $first_taken;
+			}	
+			if(!$third_taken){
+			  $third_taken = $twoTest;
+			  $data['third'] = $third_taken;
 			  continue;
-			}		
+			}	
 			
 		}
 		
 		return $data;
-		
-		}
 	
 	}
 

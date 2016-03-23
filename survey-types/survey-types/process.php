@@ -28,7 +28,7 @@
                  $data = trim($data);
                  $data = stripslashes($data);
                  $data = htmlspecialchars($data);
-                   if ($data ==='behavior'||$data ==='emotions'||$data ==='thoughts'){
+                   if ($data ==='thoughts'){
                         return $data;
                    } else {
                     exit();}
@@ -84,21 +84,6 @@ if (test_input_in($_POST["radios-7"])) {
       } else {
         $output ="Invalid input value 7";
       }
-if (test_input_in($_POST["radios-8"])) {
-        $Question8 = $_POST["radios-8"];
-      } else {
-        $output ="Invalid input value 8";
-      }
-if (test_input_in($_POST["radios-9"])) {
-        $Question9 = $_POST["radios-9"];
-      } else {
-        $output ="Invalid input value 9";
-      }
-if (test_input_in($_POST["radios-10"])) {
-        $Question10 = $_POST["radios-10"];
-      } else {
-        $output ="Invalid input value 10";
-      }
 
                                
 
@@ -113,9 +98,6 @@ if (test_input_in($_POST["radios-10"])) {
                                    'Q5' => $Question5,
                                    'Q6' => $Question6,
                                    'Q7' => $Question7,
-                                   'Q8' => $Question8,
-                                   'Q9' => $Question9,
-                                   'Q10' => $Question10,
                                   );
 
                                 
