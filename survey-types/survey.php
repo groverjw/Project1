@@ -35,70 +35,22 @@ if ( is_user_logged_in() && isset($hasLives)) {
 
 $output ="";
 if (isset($_POST["submit"])) {
-require_once('survey-types/process.php');
+	require_once('survey-types/process.php');
 }else {
-  $output ="Post not set";
-
-
- if (isset($_GET["quiz"])){
-
-	if($_GET["quiz"] === "thoughts"){
-		$user_id = $current_user->ID; 
-		$key = 'thoughts_counter';
-		$livesLeft = get_user_meta($user_id, $key);
-		$lives = $livesLeft[0];
-		if($lives < 2){
+  	$output ="Post not set";
+	$user_id = $current_user->ID; 
+	$key = 'thoughts_counter';
+	$livesLeft = get_user_meta($user_id, $key);
+	$lives = $livesLeft[0];
+	if($lives < 3){
 		$type ="thoughts";
-		} else {
+	} else {
 		$type="resultsTho";
-		}
-		
-		
-	
-		}elseif($_GET["quiz"] === "emotions"){
-			
-			$user_id = $current_user->ID; 
-		$key = 'emotions_counter';
-		$livesLeft = get_user_meta($user_id, $key);
-		$lives = $livesLeft[0];
-		if($lives < 2){
-		$type ="emotions";
-		} else {
-		$type="resultsEmo";
-		}
-			
-			
-			
-			}elseif($_GET["quiz"] === "behavior"){
-				
-					$user_id = $current_user->ID; 
-		$key = 'behavior_counter';
-		$livesLeft = get_user_meta($user_id, $key);
-		$lives = $livesLeft[0];
-		if($lives < 2){
-		$type ="behavior";
-		} else {
-		$type="resultsBeh";
-		}
-				
-			}elseif($_GET["quiz"] === "results"){
-				$type="results";
-				}elseif($_GET["quiz"] === "reset"){
-				$type="reset";
-				}else{
-					
-					$type="error";
-					
-					}
-		
-	}else{
-		$type = "pick";
-		
 	}
-
-
-
-
+	
+	if($_GET["quiz"] === "reset"){
+				$type="reset";
+	}
 }
 
 
@@ -122,10 +74,6 @@ global $post;
 <div class="container">
 
  </div>
- 
- 
-
-
 				<?php get_template_part( 'survey', $type ); ?>
 	</main><!-- #main -->
 

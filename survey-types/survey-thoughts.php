@@ -20,35 +20,11 @@
 
    <!-- Form Name -->
 
-   <legend>Do your thoughts prevent you from being mentally strong?</legend>
+   <legend></legend>
 
 
-
-  
-
- <p>Welcome to the first mental strength assessment.</p>
- 
-  <p>You will take a total of three assessments throughout this course that gauge how mentally strong you are in the three core factors: thoughts, behaviors and emotions.
-
- <br> 
-
-<br>
 
 Once you complete the assessment, click submit. Once you click submit you'll be able to see your score and what it means for you.</p> 
-
-<p> In the last unit, you'll complete a mental strength plan that incorporates everything that you'll learn in this course. After finishing the course and sticking to your plan for a month, you'll be prompted via text message to take each assessment again. You'll receive one assessment per week for three weeks. After you complete the second round of assessments, you'll see a results button for each category. Click the button and see how you improved in each core factor.</p> 
-
-
-<p>Now that you have the context, it's time to see if your thoughts prevent you from being mentally strong. It's important to understand the way you think, because your thoughts play a major role in the way you feel and behave. Unproductive and unhealthy thoughts can hold you back from reaching your greatest potential.  
-
-<br>
-
-<br> 
-
-Always = 1, Frequently = 2, Sometimes = 3, Rarely = 4, Never = 5</p>
-
-
-
 
 
  <input name="form-type" type="" class="hidden" value="thoughts">
@@ -57,7 +33,7 @@ Always = 1, Frequently = 2, Sometimes = 3, Rarely = 4, Never = 5</p>
 
    <div class="form-group">
 
-     <label class="col-md-4 control-label" for="radios"> 1. When reflecting on my day, I'm more likely to recall the bad things that happened, rather than good things.</label>
+     <label class="col-md-4 control-label" for="radios"> 1. How significant is the customer benefit?<br><strong>1 = MINOR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5 = HUGE</strong></label>
 
      <div class="col-md-4">
 
@@ -115,7 +91,7 @@ Always = 1, Frequently = 2, Sometimes = 3, Rarely = 4, Never = 5</p>
 
    <div class="form-group">
 
-     <label class="col-md-4 control-label" for="radios">  2. I keep my expectations low, because I don't want to be disappointed.</label>
+     <label class="col-md-4 control-label" for="radios">  2. Is this idea truly new?<br><strong>1 = ME-TOO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5 = BREAKTHROUGH</strong></label>
 
      <div class="col-md-4">
 
@@ -167,7 +143,7 @@ Always = 1, Frequently = 2, Sometimes = 3, Rarely = 4, Never = 5</p>
 
    <div class="form-group">
 
-     <label class="col-md-4 control-label" for="radios"> 3. When I think about making a change in my life, I spend more time thinking about possible worst-case scenarios rather than best-case scenarios.</label>
+     <label class="col-md-4 control-label" for="radios"> 3. How bis is the potential market?<br><strong>1 = TINY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5 = ENORMOUS</strong></label>
 
      <div class="col-md-4">
 
@@ -217,7 +193,7 @@ Always = 1, Frequently = 2, Sometimes = 3, Rarely = 4, Never = 5</p>
 
      <div class="form-group">
 
-       <label class="col-md-4 control-label" for="radios">  4. I compare myself to other people in areas like wealth, appearance, or status.</label>
+       <label class="col-md-4 control-label" for="radios">  4. Can the benefit be delivered economically?<br><strong>1 = NOPE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5 = ABSOLUTELY</strong></label>
 
        <div class="col-md-4">
 
@@ -267,7 +243,7 @@ Always = 1, Frequently = 2, Sometimes = 3, Rarely = 4, Never = 5</p>
 
        <div class="form-group">
 
-         <label class="col-md-4 control-label" for="radios">  5. I have bad luck.</label>
+         <label class="col-md-4 control-label" for="radios">  5. How significant are the technical hurdles?<br><strong>1 = MINOR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5 = DAUNTING</strong></label>
 
          <div class="col-md-4">
 
@@ -317,7 +293,7 @@ Always = 1, Frequently = 2, Sometimes = 3, Rarely = 4, Never = 5</p>
 
          <div class="form-group">
 
-           <label class="col-md-4 control-label" for="radios"> 6. I think I deserve better things in my life than what I have now.</label>
+           <label class="col-md-4 control-label" for="radios"> 6. Does this idea require a new ecosystem?<br><strong>1 = NO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5 = YES</strong></label>
 
            <div class="col-md-4">
 
@@ -367,7 +343,7 @@ Always = 1, Frequently = 2, Sometimes = 3, Rarely = 4, Never = 5</p>
 
            <div class="form-group">
 
-             <label class="col-md-4 control-label" for="radios"> 7. I criticize myself.</label>
+             <label class="col-md-4 control-label" for="radios"> 7. Does this idea fit with our skills/assets?<br><strong>1 = POOR FIT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5 = TIGHT FIT</strong></label>
 
              <div class="col-md-4">
 
@@ -413,162 +389,7 @@ Always = 1, Frequently = 2, Sometimes = 3, Rarely = 4, Never = 5</p>
 
              </div>
 
-           </div>  <!-- Q8 -->
-
-             <div class="form-group">
-
-               <label class="col-md-4 control-label" for="radios"> 8. I think I have little control over the things that happen to me.</label>
-
-               <div class="col-md-4">
-
-                 <label class="radio-inline" >
-
-                   <input type="radio" name="radios-8" id="radios-0" value="1" checked="checked">
-
-                   1
-
-                 </label>
-
-                 <label class="radio-inline" >
-
-                   <input type="radio" name="radios-8" id="radios-1" value="2">
-
-                   2
-
-                 </label>
-
-                 <label class="radio-inline" >
-
-                   <input type="radio" name="radios-8" id="radios-2" value="3">
-
-                   3
-
-                 </label>
-
-                 <label class="radio-inline" >
-
-                   <input type="radio" name="radios-8" id="radios-3" value="4">
-
-                   4
-
-                 </label>
-
-                 <label class="radio-inline" >
-
-                   <input type="radio" name="radios-8" id="radios-4" value="5">
-
-                   5
-
-                 </label>
-
-               </div>
-
-             </div>  <!-- Q9 -->
-
-               <div class="form-group">
-
-                 <label class="col-md-4 control-label" for="radios"> 9. When I have a presentation, performance, or activity coming up, I tend to predict a negative outcome.</label>
-
-                 <div class="col-md-4">
-
-                   <label class="radio-inline" >
-
-                     <input type="radio" name="radios-9" id="radios-0" value="1" checked="checked">
-
-                     1
-
-                   </label>
-
-                   <label class="radio-inline" >
-
-                     <input type="radio" name="radios-9" id="radios-1" value="2">
-
-                     2
-
-                   </label>
-
-                   <label class="radio-inline" >
-
-                     <input type="radio" name="radios-9" id="radios-2" value="3">
-
-                     3
-
-                   </label>
-
-                   <label class="radio-inline" >
-
-                     <input type="radio" name="radios-9" id="radios-3" value="4">
-
-                     4
-
-                   </label>
-
-                   <label class="radio-inline" >
-
-                     <input type="radio" name="radios-9" id="radios-4" value="5">
-
-                     5
-
-                   </label>
-
-                 </div>
-
-               </div>
-
-
-
-               <!-- Q10 -->
-
-                 <div class="form-group">
-
-                   <label class="col-md-4 control-label" for="radios"> 10. I have trouble accepting compliments from other people.</label>
-
-                   <div class="col-md-4">
-
-                     <label class="radio-inline" >
-
-                       <input type="radio" name="radios-10" id="radios-0" value="1" checked="checked">
-
-                       1
-
-                     </label>
-
-                     <label class="radio-inline" >
-
-                       <input type="radio" name="radios-10" id="radios-1" value="2">
-
-                       2
-
-                     </label>
-
-                     <label class="radio-inline" >
-
-                       <input type="radio" name="radios-10" id="radios-2" value="3">
-
-                       3
-
-                     </label>
-
-                     <label class="radio-inline" >
-
-                       <input type="radio" name="radios-10" id="radios-3" value="4">
-
-                       4
-
-                     </label>
-
-                     <label class="radio-inline" >
-
-                       <input type="radio" name="radios-10" id="radios-4" value="5">
-
-                       5
-
-                     </label>
-
-                   </div>
-
-                 </div>
-
+           </div>  
 
 
    <!-- Button -->
